@@ -17,8 +17,19 @@ function Login({ setIsLoggedIn }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-
+    // fetch(" http://localhost:3000/login", {
+    //   method: "POST",
+    //   headers:{
+    //     "Content-Type:" : "application/json",
+    //   },
+    //   body: JSON.stringify(formData)
+    // })
     setIsLoggedIn(true);
+    // .then((response) => response.json())
+    // .then((user) => {
+    //   // console.log(data)
+    //   onLogin(user)
+    // })
 
     // after logging the user in, redirect to the home page!
     history.push("/");
